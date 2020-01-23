@@ -1,0 +1,20 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% load bootstrap %}
+
+{% block content %}
+ <h1 class="text-center"> <img src="../../static/logotip/L20.png" width="470" height="70" class="text-center"  alt="Alternate Text" /></h1><br />
+ <form method="POST"  enctype="multipart/form-data">{% csrf_token %} {# защита от атак CSRF#}
+
+ <div>
+     
+
+ {{form|bootstrap}}
+
+ <button type="submit" class="save btn btn-primary" > Разместить статью </button>
+
+ </div>
+
+ </form>
+
+{% endblock %}

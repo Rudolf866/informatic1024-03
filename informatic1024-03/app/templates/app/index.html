@@ -1,0 +1,385 @@
+﻿<!--♕-->
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+
+    <div class="jumbotron">
+      <div class="container">
+              <div class="row">
+                  <div class="col-sm-6  btn-holder"></div>
+                     <div class="col-sm-6 ">
+                       <!-- <h2 class="text-center" style="font-size:36px;color:floralwhite;">Informatic1024-03</h2>-->
+                         <a  href="/"><img src="../../static/logotip/L4.png"   class="img-responsive" alt="Alternate Text" /></a>
+                        <p class="lead" style="font-family:franklin gothic medium;">Сайт для студентов Псковского Государственного Унивеситета <br />
+                                        Кафедра информационных систем и технологий <br />
+                                        Группы заочного отделеня 1024-03.</p>
+                        <p class="text-center"><a href="{% url 'registration' %}" class="btn btn-primary btn-large">Зарегистрироваться &raquo;</a> </p>
+
+                     </div> 
+              </div>
+      </div>
+    </div>
+
+<br />
+<br />
+ <br />
+<div class="text-center">
+  <div id="slider" class="slider">
+    <ol class="slider__indicators">
+      <li class="slider__indicator slider__indicator_active" data-slide-to="0"></li>
+      <li class="slider__indicator" data-slide-to="1"></li>
+      <li class="slider__indicator" data-slide-to="2"></li>
+      <li class="slider__indicator" data-slide-to="3"></li>
+      <li class="slider__indicator" data-slide-to="4"></li>
+      <li class="slider__indicator" data-slide-to="5"></li>
+      <li class="slider__indicator" data-slide-to="6"></li>
+     
+    </ol>
+    <div class="slider__items">
+      <div class="slider__item slider__item_active">
+        <img class="car" src="../../static/media/apple1.png" alt="c1">
+           <div class="carousel-caption">       
+        <h1>Ноутбук Apple</h1>
+               <h3>Операционная система macOS лежит в основе каждого Mac.
+               Она позволяет выполнять задачи, с которыми другие компьютеры
+               просто не справятся.</h3>
+              <a href="https://www.apple.com/ru/mac/" class="btn btn-primary">Подробнее</a>     
+      </div>
+      </div>
+      <div class="slider__item">
+        <img class="car"  src="../../static/media/S1.png" alt="c1">
+           <div class="carousel-caption">       
+        <h1 style="color:yellow;">Нанотехнологии</h1>
+               <h3 style="color:yellow;">Новый нано-материал может привести
+               к самостоятельной мойки окон и солнечных панелей.</h3>
+              <a href="https://robroy.ru/nanotexnologii" class="btn btn-primary">Подробнее</a>    
+      </div>
+      </div>
+      <div class="slider__item">
+        <img class="car" src="../../static/media/S2.png" alt="c1">
+           <div class="carousel-caption">       
+        <h1 class="float">Наушники</h1>
+               <h2 class="float" >Самые дорогие наушники в мире:
+               когда музыка дороже денег.</h2>
+               <a href="https://ostrovrusa.ru/samye-dorogie-naushniki" class="btn btn-primary float">Подробнее</a>  
+      </div>
+      </div>
+      <div class="slider__item">
+        <img class="car" src="../../static/media/S3.png" alt="c1">
+           <div class="carousel-caption">       
+        <h1>Nvidia Geforce GTX 980</h1>
+               <h2>Новые модели Geforce GTX 980 и GTX 970 
+               совершенно точно отлично подойдут для всех 
+               самых современных игр.</h2>
+               <a href="https://www.ixbt.com/video3/gm204-part1.shtml" class="btn btn-primary">Подробнее</a>  
+      </div>
+      </div>
+         <div class="slider__item">
+        <img class="car" src="../../static/media/S4.png" alt="c1">
+              <div class="carousel-caption">       
+        <h1 class="float">Мультимедиа</h1>
+               <h2 class="float">Самые популярные музыкальные треки.</h2><br />
+               <p class="btn btn-primary float"> Подробнее</p>     
+      </div>
+      </div>
+         <div class="slider__item">
+        <img class="car" src="../../static/media/S5.png" alt="c1">
+              <div class="carousel-caption">       
+        <h1 style="color:yellow;">Биометрическая идентификация</h1>
+               <h2 style="color:yellow;">На крупных и мелких предприятиях, 
+                  секретных объектах, в банковской системе,
+                  магазинах используется биометрическая идентификаци.</h2>
+              <a href="https://www.biotime.ru/company_biotime/novosti/biometricheskaya-identifikatsiya/" class="btn btn-primary">Подробнее</a>      
+      </div>
+      </div>
+         <div class="slider__item">
+        <img class="car" src="../../static/media/S6.png" alt="c1">
+ <div class="carousel-caption">       
+        <h1 style="color:blue;">Планшет и возможности</h1>
+               <h2 style="color:blue;">Функции и возможности планшетного компьютера.</h2>
+               <a href="http://www.techno-guide.ru/informatsionnye-tekhnologii/mobilnye-ustrojstva/funktsii-i-vozmozhnosti-planshetnogo-kompyutera.html" class="btn btn-primary">Подробнее</a>     
+      </div>
+      </div>
+    </div>
+    <a class="slider__control slider__control_prev" href="#" role="button"></a>
+    <a class="slider__control slider__control_next" href="#" role="button"></a>
+  </div>
+</div>
+  <script>
+    'use strict';
+    var slider = (function (config) {
+
+      const ClassName = {
+        INDICATOR_ACTIVE: 'slider__indicator_active',
+        ITEM: 'slider__item',
+        ITEM_LEFT: 'slider__item_left',
+        ITEM_RIGHT: 'slider__item_right',
+        ITEM_PREV: 'slider__item_prev',
+        ITEM_NEXT: 'slider__item_next',
+        ITEM_ACTIVE: 'slider__item_active'
+      }
+
+      var
+        _isSliding = false, // индикация процесса смены слайда
+        _interval = 0, // числовой идентификатор таймера
+        _transitionDuration = 700, // длительность перехода
+        _slider = {}, // DOM элемент слайдера
+        _items = {}, // .slider-item (массив слайдов) 
+        _sliderIndicators = {}, // [data-slide-to] (индикаторы)
+        _config = {
+          selector: '', // селектор слайдера
+          isCycling: true, // автоматическая смена слайдов
+          direction: 'next', // направление смены слайдов
+          interval: 5000, // интервал между автоматической сменой слайдов
+          pause: true // устанавливать ли паузу при поднесении курсора к слайдеру
+        };
+
+      var
+        // функция для получения порядкового индекса элемента
+        _getItemIndex = function (_currentItem) {
+          var result;
+          _items.forEach(function (item, index) {
+            if (item === _currentItem) {
+              result = index;
+            }
+          });
+          return result;
+        },
+        // функция для подсветки активного индикатора
+        _setActiveIndicator = function (_activeIndex, _targetIndex) {
+          if (_sliderIndicators.length !== _items.length) {
+            return;
+          }
+          _sliderIndicators[_activeIndex].classList.remove(ClassName.INDICATOR_ACTIVE);
+          _sliderIndicators[_targetIndex].classList.add(ClassName.INDICATOR_ACTIVE);
+        },
+
+        // функция для смены слайда
+        _slide = function (direction, activeItemIndex, targetItemIndex) {
+          var
+            directionalClassName = ClassName.ITEM_RIGHT,
+            orderClassName = ClassName.ITEM_PREV,
+            activeItem = _items[activeItemIndex], // текущий элемент
+            targetItem = _items[targetItemIndex]; // следующий элемент
+
+          var _slideEndTransition = function () {
+            activeItem.classList.remove(ClassName.ITEM_ACTIVE);
+            activeItem.classList.remove(directionalClassName);
+            targetItem.classList.remove(orderClassName);
+            targetItem.classList.remove(directionalClassName);
+            targetItem.classList.add(ClassName.ITEM_ACTIVE);
+            window.setTimeout(function () {
+              if (_config.isCycling) {
+                clearInterval(_interval);
+                _cycle();
+              }
+              _isSliding = false;
+              activeItem.removeEventListener('transitionend', _slideEndTransition);
+            }, _transitionDuration);
+          };
+
+          if (_isSliding) {
+            return; // завершаем выполнение функции если идёт процесс смены слайда
+          }
+          _isSliding = true; // устанавливаем переменной значение true (идёт процесс смены слайда)
+
+          if (direction === "next") { // устанавливаем значение классов в зависимости от направления
+            directionalClassName = ClassName.ITEM_LEFT;
+            orderClassName = ClassName.ITEM_NEXT;
+          }
+
+          targetItem.classList.add(orderClassName); // устанавливаем положение элемента перед трансформацией
+          _setActiveIndicator(activeItemIndex, targetItemIndex); // устанавливаем активный индикатор
+
+          window.setTimeout(function () { // запускаем трансформацию
+            targetItem.classList.add(directionalClassName);
+            activeItem.classList.add(directionalClassName);
+            activeItem.addEventListener('transitionend', _slideEndTransition);
+          }, 0);
+
+        },
+        // функция для перехода к предыдущему или следующему слайду
+        _slideTo = function (direction) {
+          var
+            activeItem = _slider.querySelector('.' + ClassName.ITEM_ACTIVE), // текущий элемент
+            activeItemIndex = _getItemIndex(activeItem), // индекс текущего элемента 
+            lastItemIndex = _items.length - 1, // индекс последнего элемента
+            targetItemIndex = activeItemIndex === 0 ? lastItemIndex : activeItemIndex - 1;
+          if (direction === "next") { // определяем индекс следующего слайда в зависимости от направления
+            targetItemIndex = activeItemIndex == lastItemIndex ? 0 : activeItemIndex + 1;
+          }
+          _slide(direction, activeItemIndex, targetItemIndex);
+        },
+        // функция для запуска автоматической смены слайдов в указанном направлении
+        _cycle = function () {
+          if (_config.isCycling) {
+            _interval = window.setInterval(function () {
+              _slideTo(_config.direction);
+            }, _config.interval);
+          }
+        },
+        // обработка события click
+        _actionClick = function (e) {
+          var
+            activeItem = _slider.querySelector('.' + ClassName.ITEM_ACTIVE), // текущий элемент
+            activeItemIndex = _getItemIndex(activeItem), // индекс текущего элемента
+            targetItemIndex = e.target.getAttribute('data-slide-to');
+
+          if (!(e.target.hasAttribute('data-slide-to') || e.target.classList.contains('slider__control'))) {
+            return; // завершаем если клик пришёлся на не соответствующие элементы
+          }
+          if (e.target.hasAttribute('data-slide-to')) {// осуществляем переход на указанный сдайд 
+            if (activeItemIndex === targetItemIndex) {
+              return;
+            }
+            _slide((targetItemIndex > activeItemIndex) ? 'next' : 'prev', activeItemIndex, targetItemIndex);
+          } else {
+            e.preventDefault();
+            _slideTo(e.target.classList.contains('slider__control_next') ? 'next' : 'prev   ');
+          }
+        },
+        // установка обработчиков событий
+        _setupListeners = function () {
+          // добавление к слайдеру обработчика события click
+          _slider.addEventListener('click', _actionClick);
+          // остановка автоматической смены слайдов (при нахождении курсора над слайдером)
+          if (_config.pause && _config.isCycling) {
+            _slider.addEventListener('mouseenter', function (e) {
+              clearInterval(_interval);
+            });
+            _slider.addEventListener('mouseleave', function (e) {
+              clearInterval(_interval);
+              _cycle();
+            });
+          }
+        };
+
+      // init (инициализация слайдера)
+      for (var key in config) {
+        if (key in _config) {
+          _config[key] = config[key];
+        }
+      }
+      _slider = (typeof _config.selector === 'string' ? document.querySelector(_config.selector) : _config.selector);
+      _items = _slider.querySelectorAll('.' + ClassName.ITEM);
+      _sliderIndicators = _slider.querySelectorAll('[data-slide-to]');
+      // запуск функции cycle
+      _cycle();
+      _setupListeners();
+
+      return {
+        next: function () { // метод next 
+          _slideTo('next');
+        },
+        prev: function () { // метод prev 
+          _slideTo('prev');
+        },
+        stop: function () { // метод stop
+          clearInterval(_interval);
+        },
+        cycle: function () { // метод cycle 
+          clearInterval(_interval);
+          _cycle();
+        }
+      }
+    }({
+      selector: '.slider',
+      isCycling: true,
+      direction: 'next',
+      interval: 3000,
+      pause: true
+    }));
+
+
+ 
+  </script>
+<br />
+
+     
+<div class="row">
+        <div class=" col-lg-3 col-sm-4">
+          <div class="rmk">
+               <a href="{% url 'gallery' %}"><img  class="card-img-top" src="../../static/media/G6.png" alt="Alternate Text"  /></a>
+            <div class="text-center">
+               <!--<h2 class="card-title">Галерея</h2>-->
+                <br />
+                 <a  href="/"><img src="../../static/logotip/L5.png" width="270" height="50" class="text-center"  alt="Alternate Text" /></a>
+                 <p class="card-text"style="font-family:franklin gothic medium;font-size:16px;" >Фотографии посвященные разным тематикам и воспроизведенные через bootstrap Lightbox</p>
+                 <p cl><a class="btn btn-primary" href="{% url 'gallery' %}">Посмотреть &raquo;</a></p>
+            </div>
+           </div>
+   
+         </div>
+    
+       
+
+     <div class="col-lg-9 col-sm-8 col-md-push-2">
+        <div class="rmkv">
+          <video class="video-fluid z-depth-1"  loop controls muted>
+            <source src="../../static/video/obzor.mp4" type="video/mp4" />
+          </video>
+           <div class="rmkvt">
+              <div class="text-center">
+               <!-- <h2 class="card-title">Видео о сайте</h2>
+                <p class="card-text" style="font-size:24px;">Посмотрите все возможности этого сайта.</p>-->
+                  <br />
+<a  href="/"><img src="../../static/logotip/L7.png" width="270" height="50" class="text-center"  alt="Alternate Text" /></a><br />
+                  <a  href="/"><img src="../../static/logotip/L8.png" width="470" height="50" class="text-center"  alt="Alternate Text" /></a>
+             </div>
+           </div>
+        </div>
+     </div>
+</div>
+
+<br />
+ <div class="ribbon" >
+    <span class="ribbon2"style="color:white;">Н<br>О<br>В<br>О<br>С<br>Т<br>И</span>
+     
+     <div class="text-center">
+              
+         <div class="col-sm-6  btn-holder"></div>
+                     <div class="col-sm-6 ">
+                        <h2 class="text-center" style="font-size:24px;color:gold;font-weight: bold;">Новинка от PS4 Days gone</h2>
+                        <p class="lead"style="font-size:14px;color:white;">Объездите мир, живущий по волчьим законам и опустошенный смертоносной пандемией, играя за байкера и охотника за головами Дикона Сент-Джона.
+
+Верхом на верном мотоцикле преодолевайте опасности на разбитой дороге, в числе которых толпы безумных фриков и ужасающих людей.</p>
+                        <p class="text-center"><a href="{% url 'blog' %}" class="btn btn-primary btn-large">Подробнее &raquo;</a></p>
+                     </div> 
+            </div>
+         
+ </div>
+
+  
+
+
+
+    <br />
+ <!--
+    <div class="col-md-4">
+        <h2>Getting started</h2>
+        <p>
+            Django gives you a powerful, patterns-based way to build dynamic websites that
+            enables a clean separation of concerns and gives you full control over markup
+            for enjoyable, agile development.
+        </p>
+        <p><a class="btn btn-default" href="http://www.djangobook.com/en/2.0/index.html">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Get more libraries</h2>
+        <p>The Python Package Index is a repository of software for the Python programming language.</p>
+        <p><a class="btn btn-default" href="https://pypi.org/">Learn more &raquo;</a></p>
+    </div>
+    <div class="col-md-4">
+        <h2>Microsoft Azure</h2>
+        <p>You can easily publish to Microsoft Azure using Visual Studio. Find out how you can host your application using a free trial today.</p>
+        <p><a class="btn btn-default" href="http://azure.microsoft.com">Learn more &raquo;</a></p>
+    </div>
+
+     -->
+
+
+
+
+
+{% endblock %}

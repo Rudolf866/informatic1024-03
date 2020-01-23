@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <Name>informatic1024-03</Name>
+    <RootNamespace>informatic1024-03</RootNamespace>
+    <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>f7ffd994-0c34-4edb-9bb0-6fd78968ca55</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectTypeGuids>{5F0BE9CA-D677-4A4D-8806-6076C0FAAD37};{349c5851-65df-11da-9384-00065b846f21};{888888a0-9f3d-457c-b088-3a5042f75d52}</ProjectTypeGuids>
+    <StartupFile>manage.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <WebBrowserUrl>http://localhost</WebBrowserUrl>
+    <LaunchProvider>Django launcher</LaunchProvider>
+    <DjangoSettingsModule>informatic1024_03.settings</DjangoSettingsModule>
+    <OutputPath>.</OutputPath>
+    <SuppressCollectPythonCloudServiceFiles>true</SuppressCollectPythonCloudServiceFiles>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="app\forms.py" />
+    <Compile Include="app\models.py" />
+    <Compile Include="app\tests.py" />
+    <Compile Include="app\views.py" />
+    <Compile Include="app\__init__.py" />
+    <Compile Include="app\migrations\__init__.py" />
+    <Compile Include="manage.py" />
+    <Compile Include="informatic1024_03\__init__.py" />
+    <Compile Include="informatic1024_03\settings.py" />
+    <Compile Include="informatic1024_03\urls.py" />
+    <Compile Include="informatic1024_03\wsgi.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="app\" />
+    <Folder Include="app\migrations\" />
+    <Folder Include="app\static\app\images\" />
+    <Folder Include="app\static\cursach\" />
+    <Folder Include="app\static\labaratornie\" />
+    <Folder Include="app\static\logotip\" />
+    <Folder Include="app\static\media\" />
+    <Folder Include="app\static\" />
+    <Folder Include="app\static\app\" />
+    <Folder Include="app\static\app\content\" />
+    <Folder Include="app\static\app\fonts\" />
+    <Folder Include="app\static\app\scripts\" />
+    <Folder Include="app\static\gallery\" />
+    <Folder Include="app\static\biblioteka\" />
+    <Folder Include="app\static\Pictures news\" />
+    <Folder Include="app\static\video\" />
+    <Folder Include="app\static\video\1\" />
+    <Folder Include="app\static\video\2\" />
+    <Folder Include="app\static\video\3\" />
+    <Folder Include="app\templates\" />
+    <Folder Include="app\templates\app\" />
+    <Folder Include="informatic1024_03\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="app\static\app\content\lightbox.css" />
+    <Content Include="app\static\app\content\logotip1121.png" />
+    <Content Include="app\static\app\content\may.jpg" />
+    <Content Include="app\static\app\scripts\lightbox-plus-jquery.min.js" />
+    <Content Include="app\static\app\scripts\lightbox.js" />
+    <Content Include="app\static\app\scripts\lightbox.min.js" />
+    <Content Include="app\static\app\images\close.png" />
+    <Content Include="app\static\app\images\loading.gif" />
+    <Content Include="app\static\app\images\next.png" />
+    <Content Include="app\static\app\images\prev.png" />
+    <Content Include="app\static\cursach\KurR_BD_Piskunova.doc" />
+    <Content Include="app\static\cursach\Kursovaya_rabota.docx" />
+    <Content Include="app\static\cursach\Otchyot_po_kursovoy_rabote.docx" />
+    <Content Include="app\static\gallery\10.jpg" />
+    <Content Include="app\static\gallery\11.jpg" />
+    <Content Include="app\static\gallery\12.jpg" />
+    <Content Include="app\static\gallery\13.jpg" />
+    <Content Include="app\static\gallery\14.jpg" />
+    <Content Include="app\static\gallery\15.jpg" />
+    <Content Include="app\static\gallery\16.jpg" />
+    <Content Include="app\static\gallery\17.jpg" />
+    <Content Include="app\static\gallery\18.jpg" />
+    <Content Include="app\static\gallery\19.jpg" />
+    <Content Include="app\static\gallery\2.jpg" />
+    <Content Include="app\static\gallery\20.jpg" />
+    <Content Include="app\static\gallery\21.jpg" />
+    <Content Include="app\static\gallery\22.jpg" />
+    <Content Include="app\static\gallery\23.jpg" />
+    <Content Include="app\static\gallery\24.jpg" />
+    <Content Include="app\static\gallery\25.jpg" />
+    <Content Include="app\static\gallery\26.jpg" />
+    <Content Include="app\static\gallery\27.jpg" />
+    <Content Include="app\static\gallery\28.jpg" />
+    <Content Include="app\static\gallery\29.jpg" />
+    <Content Include="app\static\gallery\3.jpg" />
+    <Content Include="app\static\gallery\30.jpg" />
+    <Content Include="app\static\gallery\31.jpg" />
+    <Content Include="app\static\gallery\32.jpg" />
+    <Content Include="app\static\gallery\33.jpg" />
+    <Content Include="app\static\gallery\34.jpg" />
+    <Content Include="app\static\gallery\35.jpg" />
+    <Content Include="app\static\gallery\36.jpg" />
+    <Content Include="app\static\gallery\37.jpg" />
+    <Content Include="app\static\gallery\38.jpg" />
+    <Content Include="app\static\gallery\39.jpg" />
+    <Content Include="app\static\gallery\4.jpg" />
+    <Content Include="app\static\gallery\40.jpg" />
+    <Content Include="app\static\gallery\5.jpg" />
+    <Content Include="app\static\gallery\6.jpg" />
+    <Content Include="app\static\gallery\7.jpg" />
+    <Content Include="app\static\gallery\8.jpg" />
+    <Content Include="app\static\gallery\9.jpg" />
+    <Content Include="app\static\labaratornie\Deductor.zip" />
+    <Content Include="app\static\labaratornie\Gotovye_laby_po_OOP.docx" />
+    <Content Include="app\static\labaratornie\Laba po komputernoy graghics.zip" />
+    <Content Include="app\static\labaratornie\Laba Prolog.rar" />
+    <Content Include="app\static\labaratornie\laba.zip" />
+    <Content Include="app\static\labaratornie\Ministrstvo obrazovania.docx" />
+    <Content Include="app\static\labaratornie\Obrazci labaratornih rabot MathCad.zip" />
+    <Content Include="app\static\labaratornie\Otchet po labam.docx" />
+    <Content Include="app\static\labaratornie\x-files.zip" />
+    <Content Include="app\static\logotip\L10.png" />
+    <Content Include="app\static\logotip\L11.png" />
+    <Content Include="app\static\logotip\L12.png" />
+    <Content Include="app\static\logotip\L13.png" />
+    <Content Include="app\static\logotip\L14.png" />
+    <Content Include="app\static\logotip\L15.png" />
+    <Content Include="app\static\logotip\L16.png" />
+    <Content Include="app\static\logotip\L17.png" />
+    <Content Include="app\static\logotip\L18.png" />
+    <Content Include="app\static\logotip\L19.png" />
+    <Content Include="app\static\logotip\L2.png" />
+    <Content Include="app\static\logotip\L20.png" />
+    <Content Include="app\static\logotip\L3.png" />
+    <Content Include="app\static\logotip\L4.png" />
+    <Content Include="app\static\logotip\L5.png" />
+    <Content Include="app\static\logotip\L6.png" />
+    <Content Include="app\static\logotip\L7.png" />
+    <Content Include="app\static\logotip\L8.jpg" />
+    <Content Include="app\static\logotip\L8.png" />
+    <Content Include="app\static\logotip\L9.png" />
+    <Content Include="app\static\media\1.jpg" />
+    <Content Include="app\static\app\content\informatic.png" />
+    <Content Include="app\static\app\content\informatic1.png" />
+    <Content Include="app\static\media\10.png" />
+    <Content Include="app\static\media\4.jpg" />
+    <Content Include="app\static\media\5.png" />
+    <Content Include="app\static\media\6.png" />
+    <Content Include="app\static\media\8.png" />
+    <Content Include="app\static\media\apple.png" />
+    <Content Include="app\static\media\apple1.png" />
+    <Content Include="app\static\media\avatar.png" />
+    <Content Include="app\static\media\coffe.jpg" />
+    <Content Include="app\static\media\computer.jpg" />
+    <Content Include="app\static\media\CSHAP.png" />
+    <Content Include="app\static\media\G6.png" />
+    <Content Include="app\static\media\htmlcss.png" />
+    <Content Include="app\static\media\HtmlCssprogramming.png" />
+    <Content Include="app\static\media\maxresdefault.jpg" />
+    <Content Include="app\static\media\pyth.png" />
+    <Content Include="app\static\media\robo.jpg" />
+    <Content Include="app\static\media\S1.png" />
+    <Content Include="app\static\media\S2.png" />
+    <Content Include="app\static\media\S3.png" />
+    <Content Include="app\static\media\S4.png" />
+    <Content Include="app\static\media\S5.png" />
+    <Content Include="app\static\media\S6.png" />
+    <Content Include="app\static\media\server.jpg" />
+    <Content Include="app\static\media\service.jpg" />
+    <Content Include="app\static\media\spp.png" />
+    <Content Include="app\static\media\test4.png" />
+    <Content Include="app\static\Pictures news\P1.jpg" />
+    <Content Include="app\static\Pictures news\P2.jpg" />
+    <Content Include="app\static\video\1\postgresql %28convert-video-online.com%29.webm" />
+    <Content Include="app\static\video\1\postgresql.mp4" />
+    <Content Include="app\static\video\1\postgresql.ogg" />
+    <Content Include="app\static\video\2990.jpg" />
+    <Content Include="app\static\video\2\postgresql1.mp4" />
+    <Content Include="app\static\video\2\postgresql1.ogg" />
+    <Content Include="app\static\video\2\postgresql1.webm" />
+    <Content Include="app\static\video\3\postgresql2.mp4" />
+    <Content Include="app\static\video\3\postgresql2.ogg" />
+    <Content Include="app\static\video\3\postgresql2.webm" />
+    <Content Include="app\static\video\obzor.mp4" />
+    <Content Include="app\templates\app\Audio.html" />
+    <Content Include="app\templates\app\bibliotek.html" />
+    <Content Include="app\templates\app\blog.html" />
+    <Content Include="app\templates\app\cursach.html" />
+    <Content Include="app\templates\app\gallery.html" />
+    <Content Include="app\templates\app\links.html" />
+    <Content Include="app\templates\app\newpost.html" />
+    <Content Include="app\templates\app\registration.html" />
+    <Content Include="app\templates\app\blogpost.html" />
+    <Content Include="app\templates\app\video.html" />
+    <Content Include="requirements.txt" />
+    <Content Include="db.sqlite3" />
+    <Content Include="app\static\app\content\bootstrap.css" />
+    <Content Include="app\static\app\content\bootstrap.min.css" />
+    <Content Include="app\static\app\content\site.css" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="app\static\app\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="app\static\app\scripts\bootstrap.js" />
+    <Content Include="app\static\app\scripts\bootstrap.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.js" />
+    <Content Include="app\static\app\scripts\jquery-1.10.2.min.map" />
+    <Content Include="app\static\app\scripts\jquery.validate-vsdoc.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.min.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="app\static\app\scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="app\static\app\scripts\modernizr-2.6.2.js" />
+    <Content Include="app\static\app\scripts\respond.js" />
+    <Content Include="app\static\app\scripts\respond.min.js" />
+    <Content Include="app\static\app\scripts\_references.js" />
+    <Content Include="app\templates\app\about.html" />
+    <Content Include="app\templates\app\contact.html" />
+    <Content Include="app\templates\app\index.html" />
+    <Content Include="app\templates\app\layout.html" />
+    <Content Include="app\templates\app\login.html" />
+    <Content Include="app\templates\app\loginpartial.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="readme.html">
+      <SubType>WebBrowser</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.7</Version>
+      <Description>env (Python 3.7 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.Django.targets" />
+  <!-- Specify pre- and post-build commands in the BeforeBuild and 
+       AfterBuild targets below. -->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <AutoAssignPort>True</AutoAssignPort>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

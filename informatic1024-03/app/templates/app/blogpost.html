@@ -1,0 +1,56 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+{% load bootstrap %}
+{% block content %}
+{% load static %}
+<br />
+{% if user.is_authenticated %}
+
+
+{% if post_1.image and post_1.image.url != '/media/temp.jpg' %}
+<div class="gallery">
+    <a href="{{ post_1.image.url }}"  data-lightbox="Vacation"  class="example-image-link"  >
+<img src="{{ post_1.image.url }}" alt="" width="360" height="270" class="img-rounded" /></a>
+</div>
+{% endif %}
+
+
+
+
+<h2> {{post_1.title}} </h2>
+
+<p> {{post_1.content|linebreaksbr}} </p> {# вывод текста по абзацам#}
+
+ <h3>Добавить комментарий</h3>
+ <form method="POST" >{% csrf_token %} {# защита от атак CSRF#}
+ <div>
+ {{form|bootstrap}}
+ <button type="submit" class="save btn btn-danger" > Отправить
+комментарий </button>
+ </div>
+ </form>
+{% else %}
+{% if post_1.image and post_1.image.url != '/media/112.jpg' %}
+<img src="{{ post_1.image.url }}" alt="" />
+{% endif %}
+
+<h2> {{post_1.title}} </h2>
+
+<p> {{post_1.content|linebreaksbr}} </p> {# вывод текста по абзацам#}
+
+ <h3> Для добавления своего комментария, пожалуйста, авторизуйтесь
+</h3>
+{% endif %}
+
+{% for comment in comments %}
+<div style="background-color:black;width:700px;height:auto; border-radius: 10px;padding: 20px;
+
+word-wrap: break-word;">
+
+<h5 style="font-size:26px;color:gold;"> {{comment.author}} </h5>
+<p style="font-size:20px;font-family: Courier New;"> {{comment.text|linebreaksbr}} </p>
+<h4> {{comment.date}} </h4>
+</div>
+<br />
+{% endfor %}
+{% endblock %}

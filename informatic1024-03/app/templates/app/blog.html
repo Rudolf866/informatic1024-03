@@ -1,0 +1,26 @@
+﻿{% extends "app/layout.html" %}
+{% load static %}
+
+{% block content %}
+{% load static %}
+<div class="row">
+       <!-- <h1 class="text-center" style="font-family: Impact;color:gold;">Новости Informatic1024-03</h1>-->
+   <h1 class="text-center"> <img src="../../static/logotip/L9.png" width="470" height="70" class="text-center"  alt="Alternate Text" /></h1>
+
+ <br /><br />
+
+        {% for post in posts %}
+        {% if post.image and post.image.url != '/media/112.jpg' %}
+        <img src="{{ post.image.url }}" alt="" class="img-rounded" style="width:400px; height:300px; "/>
+        {% endif %}
+
+        <h2><a href="{% url 'blogpost' parametr=post.id %}"> {{post.title}}</a> </h2>
+        
+        <h4>{{ post.description }} </h4>
+        <p> {{post.posted}} </p>
+     <br /><br /><br />
+        {% endfor %}
+      
+</div>
+
+{% endblock %}
